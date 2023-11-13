@@ -1,3 +1,4 @@
+Autor: Verónica Ruíz Galván.
 Se incluye la practica Cuatro.
 En esta practica de crea una máquina de estados para implementar un antirrebote por software.
 Se pone a prueba con un push button conectado a la entraba PB10.
