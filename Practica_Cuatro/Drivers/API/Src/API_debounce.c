@@ -89,7 +89,7 @@ void button_Pressed()
 
 void button_Released()
 {
-	//keyButton= false;
+	keyButton= false;
 	//HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
 }
