@@ -1,41 +1,14 @@
-01:50:40 **** Incremental Build of configuration Debug for project Practica_5_ ****
+18:39:06 **** Incremental Build of configuration Debug for project SPI_prueba ****
 make -j4 all 
-arm-none-eabi-gcc "../Drivers/API/Src/API_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/Practica_5_/Drivers/API/Inc" -I"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/Practica_5_/Drivers/API/Src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/API/Src/API_uart.d" -MT"Drivers/API/Src/API_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/API/Src/API_uart.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/Practica_5_/Drivers/API/Inc" -I"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/Practica_5_/Drivers/API/Src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:110:40: warning: pointer targets in passing argument 1 of 'uartSendString' differ in signedness [-Wpointer-sign]
-  110 |                         uartSendString(TXT_BUTTON);
-      |                                        ^~~~~~~~~~
-      |                                        |
-      |                                        char *
-In file included from ../Core/Src/main.c:29:
-/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/Practica_5_/Drivers/API/Inc/API_uart.h:26:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
-   26 | void uartSendString(uint8_t * pstring);
-      |                     ~~~~~~~~~~^~~~~~~
-../Core/Src/main.c:119:52: warning: pointer targets in passing argument 1 of 'uartSendString' differ in signedness [-Wpointer-sign]
-  119 |                                     uartSendString(TXT_BUTTON);
-      |                                                    ^~~~~~~~~~
-      |                                                    |
-      |                                                    char *
-In file included from ../Core/Src/main.c:29:
-/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/Practica_5_/Drivers/API/Inc/API_uart.h:26:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
-   26 | void uartSendString(uint8_t * pstring);
-      |                     ~~~~~~~~~~^~~~~~~
-arm-none-eabi-gcc -o "Practica_5_.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/Practica_5_/STM32F401RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Practica_5_.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Practica_5_.elf
- 
-arm-none-eabi-size   Practica_5_.elf 
-arm-none-eabi-objdump -h -S  Practica_5_.elf  > "Practica_5_.list"
+arm-none-eabi-size   SPI_prueba.elf 
    text	   data	    bss	    dec	    hex	filename
-   8892	     20	   1724	  10636	   298c	Practica_5_.elf
+   7448	     20	   1660	   9128	   23a8	SPI_prueba.elf
 Finished building: default.size.stdout
  
-Finished building: Practica_5_.list
- 
-01:50:51 **** Incremental Build of configuration Debug for project Practica_5_ ****
+18:39:18 **** Incremental Build of configuration Release for project SPI_prueba ****
 make -j4 all 
-arm-none-eabi-size   Practica_5_.elf 
+arm-none-eabi-size   SPI_prueba.elf 
    text	   data	    bss	    dec	    hex	filename
-   8892	     20	   1724	  10636	   298c	Practica_5_.elf
+   4996	     20	   1660	   6676	   1a14	SPI_prueba.elf
 Finished building: default.size.stdout
  
