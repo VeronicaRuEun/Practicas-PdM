@@ -1,26 +1,21 @@
-07:29:35 **** Incremental Build of configuration Debug for project PdM_TPF ****
+22:56:44 **** Incremental Build of configuration Debug for project PCSE_TPF ****
 make -j4 all 
-arm-none-eabi-gcc "../Drivers/API/Src/API_mefLcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/PdM_TPF/Drivers/API/Inc" -I"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/PdM_TPF/Drivers/API/Src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/API/Src/API_mefLcd.d" -MT"Drivers/API/Src/API_mefLcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/API/Src/API_mefLcd.o"
-../Drivers/API/Src/API_mefLcd.c: In function 'MostrarXYZ':
-../Drivers/API/Src/API_mefLcd.c:132:20: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-  132 |                    sprintf(xg_char,"%.2f", *accFloat);
-      |                    ^~~~~~~
-../Drivers/API/Src/API_mefLcd.c:13:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-   12 | #include "API_mefLcd.h"
-  +++ |+#include <stdio.h>
-   13 | 
-../Drivers/API/Src/API_mefLcd.c:132:20: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
-  132 |                    sprintf(xg_char,"%.2f", *accFloat);
-      |                    ^~~~~~~
-../Drivers/API/Src/API_mefLcd.c:132:20: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-arm-none-eabi-gcc -o "PdM_TPF.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/PdM_TPF/STM32F401RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PdM_TPF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PdM_TPF.elf
- 
-arm-none-eabi-size   PdM_TPF.elf 
-arm-none-eabi-objdump -h -S  PdM_TPF.elf  > "PdM_TPF.list"
+arm-none-eabi-size   PCSE_TPF.elf 
    text	   data	    bss	    dec	    hex	filename
-  36724	    476	   2124	  39324	   999c	PdM_TPF.elf
+  36772	    476	   2124	  39372	   99cc	PCSE_TPF.elf
 Finished building: default.size.stdout
  
-Finished building: PdM_TPF.list
+22:56:47 **** Incremental Build of configuration Debug for project PCSE_TPF ****
+make -j4 all 
+arm-none-eabi-size   PCSE_TPF.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36772	    476	   2124	  39372	   99cc	PCSE_TPF.elf
+Finished building: default.size.stdout
+ 
+22:57:28 **** Incremental Build of configuration Debug for project PCSE_TPF ****
+make -j4 all 
+arm-none-eabi-size   PCSE_TPF.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36772	    476	   2124	  39372	   99cc	PCSE_TPF.elf
+Finished building: default.size.stdout
  
