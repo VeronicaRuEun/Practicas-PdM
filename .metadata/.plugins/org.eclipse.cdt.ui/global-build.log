@@ -1,21 +1,42 @@
-22:56:44 **** Incremental Build of configuration Debug for project PCSE_TPF ****
+00:16:54 **** Incremental Build of configuration Debug for project PCSE_TPF ****
 make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/PCSE_TPF/Drivers/API/Inc" -I"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/PCSE_TPF/Drivers/API/Src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "PCSE_TPF.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/eunchan/Escritorio/LSE/Microcontroladores/STM32/PCSE_TPF/STM32F401RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PCSE_TPF.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PCSE_TPF.elf
+ 
 arm-none-eabi-size   PCSE_TPF.elf 
+arm-none-eabi-objdump -h -S  PCSE_TPF.elf  > "PCSE_TPF.list"
    text	   data	    bss	    dec	    hex	filename
-  36772	    476	   2124	  39372	   99cc	PCSE_TPF.elf
+  36524	    476	   2124	  39124	   98d4	PCSE_TPF.elf
 Finished building: default.size.stdout
  
-22:56:47 **** Incremental Build of configuration Debug for project PCSE_TPF ****
+Finished building: PCSE_TPF.list
+ 
+00:17:04 **** Incremental Build of configuration Debug for project PCSE_TPF ****
 make -j4 all 
 arm-none-eabi-size   PCSE_TPF.elf 
    text	   data	    bss	    dec	    hex	filename
-  36772	    476	   2124	  39372	   99cc	PCSE_TPF.elf
+  36524	    476	   2124	  39124	   98d4	PCSE_TPF.elf
 Finished building: default.size.stdout
  
-22:57:28 **** Incremental Build of configuration Debug for project PCSE_TPF ****
+00:18:19 **** Incremental Build of configuration Debug for project PCSE_TPF ****
 make -j4 all 
 arm-none-eabi-size   PCSE_TPF.elf 
    text	   data	    bss	    dec	    hex	filename
-  36772	    476	   2124	  39372	   99cc	PCSE_TPF.elf
+  36524	    476	   2124	  39124	   98d4	PCSE_TPF.elf
+Finished building: default.size.stdout
+ 
+00:18:53 **** Build of configuration Debug for project PdM_TPF ****
+make -j4 all 
+arm-none-eabi-size   PdM_TPF.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36724	    476	   2124	  39324	   999c	PdM_TPF.elf
+Finished building: default.size.stdout
+ 
+00:19:32 **** Incremental Build of configuration Debug for project PCSE_TPF ****
+make -j4 all 
+arm-none-eabi-size   PCSE_TPF.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36524	    476	   2124	  39124	   98d4	PCSE_TPF.elf
 Finished building: default.size.stdout
  

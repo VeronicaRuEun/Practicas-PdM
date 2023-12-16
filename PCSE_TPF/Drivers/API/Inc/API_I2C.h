@@ -28,7 +28,5 @@
 /*Prototipos de funciones para I2C*/
 void I2C_Gpio(void);
 bool I2C_Init(void);
-uint8_t I2C_ScanAdress(void);
-void I2C_Transmit(uint16_t DevAddress, uint8_t *pData);
 
 #endif /* API_INC_API_I2C_H_ */
